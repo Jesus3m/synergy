@@ -243,7 +243,7 @@
       const mensaje = `De: ${sujeto} \nEmail o telefono: ${email} \n \t ${cuerpo}`
       console.log(mensaje);
 
-      var mailToLink = `mailto:synergycef@gmail.com?body=${encodeURIComponent(mensaje)}?subject=${sujeto}:%20Contacto%20con%20synergy%20a%20traves%20de:%20${email}`;
+      var mailToLink = `mailto:synergycef@gmail.com?body=${encodeURIComponent(mensaje)}&subject=${sujeto}:%20Contacto%20con%20synergy%20a%20traves%20de:%20${email}`;
 
     console.log(mensaje)
     window.open(mailToLink);
