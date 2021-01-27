@@ -187,11 +187,11 @@
         <div class="container">
           <div class="form-contact">
             <h3>Contactanos</h3>
-              <form>
-                  <input type="text" name="name" placeholder="Cual es tu nombre">
+              <form id="emailForm">
+                  <input type="text" name="name" placeholder="Cual es tu nombre" required>
                   <input type="email" name="email" placeholder="ingresa tu email o numero de telefono">
-                  <textarea name="message" id="message" placeholder="Escribenos tu mensaje"></textarea>
-                  <button>Enviar</button>
+                  <textarea name="message" id="message" placeholder="Escribenos tu mensaje"  required></textarea>
+                  <button onclick="sendEmail(this)">Enviar</button>
               </form>
           </div>
           <div class="map">
@@ -231,5 +231,27 @@
         speed: 500,
         speedAsDuration: true
 });
+</script>
+<script>
+  function sendEmail(e){
+    const form = document.getElementById('emailForm')
+    form.addEventListener('submit', (e) =>{      
+      e.preventDefault();
+      const sujeto = e.target[0].value;
+      const email = e.target[1].value;
+      const cuerpo = e.target[2].value;
+      const mensaje = `De: ${sujeto} \nEmail o telefono: ${email} \n \t ${cuerpo}`
+      console.log(mensaje);
+
+      var mailToLink = "mailto:synergycef@gmail.com?subject="+encodeURIComponent(`${sujeto}: Contacto con synergy a traves de: ${email}`) +"?body=" + encodeURIComponent(mensaje);
+    console.log(mensaje)
+    window.open(mailToLink);
+   e.target[0].value= "";
+   e.target[1].value = "";
+   e.target[2].value = "";
+    alert('Mensaje enviado');
+
+    })
+  }
 </script>
 </html>
