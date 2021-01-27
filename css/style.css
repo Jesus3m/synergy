@@ -191,7 +191,7 @@
     padding: 20px 10px;
   }
   .navbar-menu.hide {
-    transform: translateX(-80vh);
+    transform: translateX(-150vh);
     transition: all 0.4s ease-in-out;
     -moz-transition: all 0.4s ease-in-out;
     -webkit-transition: all 0.4s ease-in-out;
