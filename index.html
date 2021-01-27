@@ -9,23 +9,23 @@
   <body>
     <div id="over" class="over hide"></div>
     <!-- Inicio de navegacion -->
-    <nav class="main-nav">
+    <nav class="main-nav navbar-top" id="main-nav">
       <div class="navbar">
         <div class="navbar-brand">
-          <a href="#">Synergy</a>
+          <a href="#home" class="active">Synergy</a>
           <button class="btn-navbar" id="button-toggle">#</button>
         </div>
         <div id="navbar-menu" class="navbar-menu hide">
-          <a class="nav-item" href="#">Servicios</a>
-          <a class="nav-item" href="#">Acerca de nosotros</a>
-          <a class="nav-item" href="#">Galeria</a>
-          <a class="nav-item" href="#">Contacto</a>
+          <a class="nav-item" href="#services">Servicios</a>
+          <a class="nav-item" href="#about">Acerca de nosotros</a>
+          <a class="nav-item" href="#gallery">Galeria</a>
+          <a class="nav-item" href="#contact">Contacto</a>
         </div>
       </div>
     </nav>
     <!-- fin de la navegacion -->
     <!-- header -->
-    <header class="main-header">
+    <header id="home" class="section main-header">
       <div class="header-content">
         <h1>Synergy</h1>
         <span></span>
@@ -37,7 +37,7 @@
     <!-- Main -->
     <main>
       <!-- services -->
-      <section id="services" class="section-main">
+      <section id="services" class="section section-main">
         <div class="container section-content">
             <div class="section-title">
                 <h3>Servicios</h3>
@@ -82,7 +82,7 @@
         </div>
       </section>
       <!-- about -->
-      <section id="about" class="section-main">
+      <section id="about" class="section section-main">
         <div class="container">
             <div class="img">
                 <img src="./img/logo.jpg" alt="Logo" class="img-responsive">
@@ -101,7 +101,7 @@
         </div>
       </section>
       <!-- Gallerry -->
-      <section id="gallery">
+      <section id="gallery" class="section">
         <div class="container">
             <div class="section-content">
                 <div class="section-title">
@@ -123,6 +123,15 @@
           </div>
         </div>
       </section>
+      <section id="contact" class="section">
+        <div class="form-contact">
+            <form>
+                <input type="text" name="name" placeholder="Cual es tu nombre">
+                <input type="email" name="email" placeholder="ingresa tu email o numero de telefono">
+                <textarea name="message" id="message" placeholder="Escribenos tu mensaje"></textarea>
+            </form>
+        </div>
+      </section>
     </main>
     <!-- <div class="popup">
         <button>x</button>
@@ -135,5 +144,6 @@
   crossorigin="anonymous"></script>
   <script src="./js/filter.gallery.js"></script>
   <script src="./js/gallery.autogenerate.js"></script>
+  <script src="./js/scrollSpy.js"></script>
 
 </html>

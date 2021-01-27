@@ -150,6 +150,7 @@ const imagesElements = img.map((image) => {
   const imgContent = document.createElement("div");
   imgContent.className = "img-content";
   const galleyImage = document.createElement("img");
+  galleyImage.loading = "lazy";
   galleyImage.className = "img-probe " + image.filter;
   galleyImage.src = image.url;
   galleyImage.alt = image.name;
