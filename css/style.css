@@ -74,6 +74,9 @@
   padding: 10px 20px;
   border-radius: 4px;
 }
+.navbar a i {
+  padding: 5px;
+}
 .navbar .navbar-menu a:hover,
 .navbar .navbar-menu a.active {
   background-color: var(--color-primary);
@@ -166,11 +169,11 @@
   }
   .navbar-menu {
     position: absolute;
-    width: 70vw;
-    max-width: 400px;
+    width: 80vw;
+    max-width: 600px;
     height: 100vh;
     top: 50px;
-    padding: 50px;
+    padding: 50px 0px !important;
     left: 0;
     background-color: var(--main-background);
     display: flex;
@@ -182,7 +185,10 @@
     -webkit-transition: all 0.4s ease-in-out;
   }
   .navbar-menu a {
-    padding: 20px 50px;
+    text-align: center;
+    display: block;
+    width: 80%;
+    padding: 20px 10px;
   }
   .navbar-menu.hide {
     transform: translateX(-80vh);
@@ -368,6 +374,7 @@ section.section {
 .btn-secundary {
   display: block;
   width: 50%;
+  min-width: 200px;
   text-align: center;
   padding: 15px;
   text-decoration: none;
@@ -525,9 +532,11 @@ section.section {
   width: 100%;
   display: flex;
   justify-content: space-evenly;
+  flex-wrap: wrap;
 }
 .gallery-filter .filter-item {
   padding: 5px 20px;
+  margin-bottom: 10px;
   border-radius: 4px;
   color: var(--color-primary);
   background: transparent;
