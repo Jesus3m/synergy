@@ -6,8 +6,28 @@
     <title>Synergy | Tu estilo de vida</title>
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/style-font.css">
+    <link rel="shortcut icon" href="./img/icon.ico" type="image/x-icon">
   </head>
+  <script>
+      window.onload = function () {
+        setTimeout(()=>{
+        document.getElementById('loader').classList.remove('show')
+        document.getElementById('loader').classList.add('hide');
+        setTimeout(()=>{
+         const loader =  document.getElementById('loader');
+         const padre = loader.parentNode;
+         padre.removeChild(loader);
+        }, 2000)
+        }, 3000)
+      }
+  </script>
   <body>
+    <div id="loader" class="loader show">
+      <div class="spinner">
+        <img src="./img/spinner.png" alt="" class="spinner-img">
+        <img src="./img/logo-text.png" alt="">
+      </div>
+    </div>
     <div id="over" class="over hide"></div>
     <!-- Inicio de navegacion -->
     <nav class="main-nav navbar-top" id="main-nav">
@@ -25,6 +45,8 @@
           <a class="nav-item" href="#about" onmouseover="openItem(this)"><span>Acerca </span><i class="icon-user-tie"></i></a>
           <a class="nav-item" href="#gallery" onmouseover="openItem(this)"><span>Galeria</span> <i class="icon-images"></i></a>
           <a class="nav-item" href="#contact" onmouseover="openItem(this)"><span>Contacto </span><i class="icon-phone"></i></a>
+            <a href="https://www.facebook.com/Synergy-CEF-101557304783734" class="social-link"><i class="icon-facebook2"></i></a>
+            <a href="#" class="social-link"><i class="icon-instagram"></i></a>
         </div>
       </div>
     </nav>
@@ -35,7 +57,7 @@
         <h1>Synergy</h1>
         <span></span>
         <p>Tu estilo de vida</p>
-        <a href="#services">Conocenos</a>
+        <a href="#services">Te estamos esperando</a>
       </div>
     </header>
     <!-- fin del header -->
@@ -57,7 +79,7 @@
                     <h4>Entrenamientos especializados</h4>
                 </div>
                 <div class="service-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum rem nesciunt consectetur numquam ad tempora possimus alias, similique vel doloremque nobis quia porro ratione laudantium voluptas, odit quam, commodi sunt.
+                    Contamos con excelentes entrenadores, listos y dispuestos a ayudarle en el camino de obterner los resultados que siempre ha deseado. Nuestras asesorias estaran enfocadas en la direccion mas optima, tomando en cuenta diversos factores, tantos fisico como de tiempo. El analisis constante de tus avances nos guiara en que direccion debemos ir, y abarcaremos todo lo escencial, siempre con una base cientifica desmostrable.
                 </div>
             </div>
             <div class="service">
@@ -68,7 +90,7 @@
                     <h4>Crecimiento muscular</h4>
                 </div>
                 <div class="service-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum rem nesciunt consectetur numquam ad tempora possimus alias, similique vel doloremque nobis quia porro ratione laudantium voluptas, odit quam, commodi sunt.
+                    ¿Tu objetivo es aumentar de peso, obtener mas fuerza y hacerlo de la manera correcta? estamos listos para diseñarte un plan de entrenamiento que te lleve a ese resultado: Cargas optimas, descansos controlados y tip alimenticios, asi como enfoque en entrenamiento funcional, de peso libre o en maquinas, dependiendo de tu condicion actual. Estamos esperandote! y que cuando pregunten que maquinas utilizas puedas responder "Yo soy la maquina!!!"
                 </div>
             </div>
             <div class="service">
@@ -79,11 +101,11 @@
                     <h4>Perdida de grasa</h4>
                 </div>
                 <div class="service-description">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsum rem nesciunt consectetur numquam ad tempora possimus alias, similique vel doloremque nobis quia porro ratione laudantium voluptas, odit quam, commodi sunt.
+                    ¿Crees que debes dejar de comer para bajar de peso? La unica verdad es que no. Te invitamos a que nos acompañes en una serie de entrenamientos orientados: te ayudaremos a desarrollar la disciplina que necesitas, asi como conducirte por un camino de desarrollo optimo. Entre rutinas HIIT, Cardio, Crossfit y Entrenamientos con cargas. Llegaras a ese peso ideal que siempre has deseado
                 </div>
             </div>
             </article>
-            <a href="#about" class="btn-primary">Saber mas</a>
+            <a href="#contact" class="btn-primary">Contactanos</a>
         </div>
         </div>
       </section>
@@ -100,7 +122,9 @@
                 </div>
                 <article>
                     <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit. Illo aperiam, nemo minus soluta vel dolores deleniti laboriosam. Nulla aperiam sequi at magni velit repellat soluta temporibus tempora, pariatur doloremque fugit perspiciatis reprehenderit expedita sint voluptas eius quam id laudantium non nemo! Ratione quo, quibusdam sed explicabo repudiandae quos ad in dolore nesciunt animi doloremque commodi eligendi libero laudantium mollitia quas optio suscipit eaque distinctio aut dignissimos unde ullam debitis perspiciatis! Fugiat ex possimus quasi ratione iste? Veritatis aut eligendi accusamus dicta alias corporis ipsum labore. Molestiae, quam quas? Provident quia saepe ipsum inventore? Quam a earum laudantium minus laborum impedit suscipit voluptates neque maxime tenetur deleniti ipsum unde, rerum placeat natus, ipsa cumque. Explicabo, quia repellendus earum porro eos distinctio doloremque ullam aliquam voluptate ipsum delectus obcaecati necessitatibus accusantium impedit cum ut enim tenetur exercitationem ipsam hic voluptatem vitae beatae? Eius numquam dolore repellat quaerat eos perferendis alias minus, amet vitae, molestiae eveniet ipsam sit consequatur quidem incidunt quis sunt, totam accusamus rem? Omnis quos sit animi quia expedita totam temporibus, porro dicta, et suscipit laborum modi reprehenderit commodi iure soluta delectus dolorem ducimus. Totam, saepe minima. Odit omnis quod nemo pariatur quos quisquam impedit, eos a necessitatibus eaque minus.
+                      Lo que para muchos comienza como un hobbie, para nosotros se ha convertido en una pasion, y si bien nuestra historia es una suma de las muchas personas que han pasado por nuestro centro de entrenamiento fisico aportando para que pudiesemos crecer y llegar a ser lo que hoy somos, queremos que sepan un poco mas de nosotros: <br> Somo un grupo de personas, mas que una empresa, amigos, que comparten el deseo de salir adelante haciendo lo que les gusta, y somos afortunados de compartir ésta pasion, de querer ayudar a personas a conseguir lo objetivos fisicos que tanto desean. Y aunque muchos piense que es algo superficial y nos consideren simplemente un "gimnasio", en el fondo nos gusta pensar en nuestra empresa como un lugar de desarrollo, tanto fisico como personal, por que como dijo el sabio <strong>Juvenal</strong> "Mens sana in corpore sano", y realmente creemos que una mente sana debe habitar en un cuerpo igual de sano, y viceversa. <br>
+                      Es por eso que nuestra mision es ser unos de los mejores C.E.F para atletas y deportista. Queremos ayudarles a alcanzar sus objetivos, metas y sueños, y estamos dispuestos a brindarle ese apoyo. Daremos todo nuestro esfuerzo y dedicación por nuestros atletas, para que todos consigamos lo que tanto queremos <br>
+                      <strong>¿Que esperas? se parte de nuestra historia</strong>
                     </p>
                     <a href="#team" class="about btn-secundary">Conoce nuestro equipo</a>
                 </article>
@@ -140,42 +164,39 @@
           <!-- Miembro de el equipo -->
           <div class="card">
             <div class="card-header">
-              <h4>Nombre</h4>
+              <h4>Erick Garcia</h4>
               <span></span>
             </div>
             <div class="card-body">
-              <img src="https://cdn.pixabay.com/photo/2017/04/13/14/55/man-2227804_960_720.jpg" alt="">
+              <img src="./img/Erick.jpg" alt="">
               <div class="socials">
-                <a href="#"><i class="icon-facebook2"></i></a>
-                <a href="#"><i class="icon-instagram"></i></a>
+                <a href="https://www.instagram.com/elgarciafit/"><i class="icon-instagram"></i></a>
               </div>
             </div>
           </div>
                     <!-- Miembro de el equipo -->
                     <div class="card">
                       <div class="card-header">
-                        <h4>Nombre</h4>
+                        <h4>Greila Sanchez</h4>
                         <span></span>
                       </div>
                       <div class="card-body">
-                        <img src="https://cdn.pixabay.com/photo/2017/04/13/14/55/man-2227804_960_720.jpg" alt="">
+                        <img src="./img/Greila.jpg" alt="">
                         <div class="socials">
-                          <a href="#"><i class="icon-facebook2"></i></a>
-                          <a href="#"><i class="icon-instagram"></i></a>
+                          <a href="https://www.instagram.com/greilasanchez/"><i class="icon-instagram"></i></a>
                         </div>
                       </div>
                     </div>
                               <!-- Miembro de el equipo -->
           <div class="card">
             <div class="card-header">
-              <h4>Nombre</h4>
+              <h4>Ronaldo Castellanos</h4>
               <span></span>
             </div>
             <div class="card-body">
-              <img src="https://cdn.pixabay.com/photo/2017/04/13/14/55/man-2227804_960_720.jpg" alt="">
+              <img src="./img/Ronaldo.jpg" alt="">
               <div class="socials">
-                <a href="#"><i class="icon-facebook2"></i></a>
-                <a href="#"><i class="icon-instagram"></i></a>
+                <a href="https://www.instagram.com/traineronald0/"><i class="icon-instagram"></i></a>
               </div>
             </div>
           </div>
@@ -205,12 +226,12 @@
          <div class="info">
            <h3>Synergy C.A &copy; 2021</h3>
            <div class="socials">
-             <a href="#"><i class="icon-facebook2"></i></a>
+             <a href="https://www.facebook.com/Synergy-CEF-101557304783734"><i class="icon-facebook2"></i></a>
              <a href="#"><i class="icon-instagram"></i></a>
            </div>
          </div>
          <div class="credits">
-           <a href="#">PowerBY: MDev. Yisus Company</a>
+           <a href="https://www.instagram.com/jesus_3ms/">PowerBY: Jesus Moreno. Mdev</a>
          </div>
        </div>
     </footer>
@@ -232,27 +253,5 @@
         speedAsDuration: true
 });
 </script>
-<script>
-  function sendEmail(e){
-    const form = document.getElementById('emailForm')
-    form.addEventListener('submit', (e) =>{      
-      e.preventDefault();
-      const sujeto = e.target[0].value;
-      const email = e.target[1].value;
-      const cuerpo = e.target[2].value;
-      const mensaje = `De: ${sujeto} \nEmail o telefono: ${email} \n \t ${cuerpo}`
-      console.log(mensaje);
-
-      var mailToLink = `mailto:synergycef@gmail.com?body=${encodeURIComponent(mensaje)}&subject=${sujeto}:%20Contacto%20con%20synergy%20a%20traves%20de:%20${email}`;
-
-    console.log(mensaje)
-    window.open(mailToLink);
-   e.target[0].value= "";
-   e.target[1].value = "";
-   e.target[2].value = "";
-    alert('Mensaje enviado');
-
-    })
-  }
-</script>
+<script src="./js/SendMail.js"></script>
 </html>

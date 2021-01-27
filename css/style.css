@@ -18,6 +18,74 @@
   box-sizing: border-box;
   font-family: var(--font-oswald-light);
 }
+/* LOADER */
+
+.loader {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.loader .spinner {
+  width: 30%;
+  height: auto;
+  min-height: 300px;
+  max-height: 600px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.loader .spinner img {
+  width: 100%;
+  height: auto;
+}
+.loader .spinner img.spinner-img {
+  width: 50%;
+  margin-bottom: 25%;
+  animation-name: girar;
+  animation-duration: 2s;
+  animation-iteration-count: infinite;
+  animation-timing-function: linear;
+}
+
+@keyframes girar {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+.loader.show {
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20000;
+  background: #fff;
+  opacity: 1;
+  transition: all 2s ease-in-out;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+}
+
+.loader.hide {
+  width: 100%;
+  height: 100vh;
+  min-height: 100vh;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 20000;
+  background: #fff;
+  opacity: 0;
+  transition: all 2s ease-in-out;
+  -webkit-transition: all 2s ease-in-out;
+  -moz-transition: all 2s ease-in-out;
+}
 
 /* navegacion */
 .main-nav {
@@ -73,6 +141,10 @@
   color: var(--text-contrast);
   padding: 10px 20px;
   border-radius: 4px;
+}
+.navbar a.social-link {
+  margin: 0;
+  padding: 5px !important;
 }
 .navbar a i {
   padding: 5px;
@@ -190,6 +262,7 @@
     width: 80%;
     padding: 20px 10px;
   }
+
   .navbar-menu.hide {
     transform: translateX(-160vh);
     transition: all 0.4s ease-in-out;
@@ -445,15 +518,18 @@ section.section {
 .service .service-title {
   width: 100%;
   color: var(--text-color);
-  font-family: var(--font-oswald-light);
+  font-family: var(--font-lato);
   font-size: 1.2rem;
   font-weight: 50;
   text-align: center;
 }
 .service .service-description {
-  padding: 10px;
+  padding: 20px 0px 20px;
+  font-family: var(--font-oswald-light);
+  font-size: 300;
   text-align: justify;
   color: var(--text-color);
+  text-align: start;
 }
 @media screen and (max-width: 800px) {
   .services-items {
