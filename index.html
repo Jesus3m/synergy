@@ -243,11 +243,8 @@
       const mensaje = `De: ${sujeto} \nEmail o telefono: ${email} \n \t ${cuerpo}`
       console.log(mensaje);
 
-<<<<<<< HEAD
-      var mailToLink = "mailto:synergycef@gmail.com?subject="+`${sujeto}: Contacto con synergy a traves de: ${email}`+"?body=" + encodeURIComponent(mensaje);
-=======
-      var mailToLink = "mailto:synergycef@gmail.com?subject="+encodeURIComponent(`${sujeto}: Contacto con synergy a traves de: ${email}`) +"?body=" + encodeURIComponent(mensaje);
->>>>>>> a995e8835fda21340544885d51ba5c1cb4bb29db
+      var mailToLink = `mailto:synergycef@gmail.com?subject=${sujeto}:%20Contacto%20co%20 synergy%20a%20traves%20de:%20${email}`+"?body=" + encodeURIComponent(mensaje);
+
     console.log(mensaje)
     window.open(mailToLink);
    e.target[0].value= "";
