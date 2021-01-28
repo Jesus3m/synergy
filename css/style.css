@@ -122,19 +122,24 @@
 }
 
 .navbar-brand a {
-  font-family: var(--font-lato);
-  font-weight: 800;
+  display: block;
+  height: 50px;
+  padding: 0;
 }
 .navbar-brand a.active {
   background: transparent;
   border: none;
+}
+.navbar-brand a img.img-logo {
+  height: 100%;
+  width: auto;
 }
 .navbar {
   width: 80%;
   max-width: 900px;
   display: flex;
   justify-content: space-between;
-  padding: 5px;
+  align-items: center;
 }
 .navbar a {
   text-decoration: none;
