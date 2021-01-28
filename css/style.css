@@ -639,15 +639,15 @@ section.section {
   justify-content: space-evenly;
 }
 .img-content {
-  height: 25vw;
-  max-width: 30vw;
+  height: 20vw;
+  max-width: 20vw;
   overflow: hidden;
   border-radius: 5px;
   cursor: pointer;
 }
 .img-probe {
-  width: auto;
-  height: 100%;
+  width: 100%;
+  height: auto;
   min-height: 200px;
   margin: 20px 0px;
   overflow: hidden;
